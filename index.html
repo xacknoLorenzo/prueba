@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+       
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+       <meta name="format-detection" content="telephone=no">      
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"> 
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/jqm.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.custom.structure.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons.min.css">
+        <title>PinusMobile</title>
+    </head>
+    <body>
+<!-- ----------------------------------------------------------------------------------- -->
+<div data-role="page" id="index">
+
+    <div data-role="panel" id="panel" data-display="overlay">
+    <ul data-role="listview">
+        <li><a href="">Configuración</a></li>
+        <li><a href="">Créditos</a></li>
+        <li><a href="">Acerca de...</a></li>
+        <li><a href="">Ayuda</a></li>
+    </ul>
+ 
+    </div>
+
+    <div id='header' data-role='header' data-position='fixed' >
+        <img src="images/logooficial.png" id="logo">
+        <a href="#panel" class="ui-btn ui-icon-bullets ui-nodisc-icon ui-alt-icon ui-btn-icon-notext ui-corner-all" id="menu"> </a> <br>
+        <div data-role="navbar" data-grid="c">
+            <ul>
+                <li> <a href="#index" class="ui-btn-active" data-mini="true">Inicio</a></li>
+                <li> <a href="#formulas" class="ui-btn" data-mini="true">Dentrometría</a></li>
+                <li> <a href="#busqueda" class="ui-btn" data-mini="true">Búsqueda</a></li>
+                <li> <a href="#identificacion" class="ui-btn" data-mini="true">Identificación</a></li>
+            </ul> 
+        </div>
+    </div><!-- fin header -->
+    <div class="ui-content">
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#altitud"><img src="images/altitud.png" id="semilla"><h2>Altitud</h2><p>La altitud es la distancia que hay del nivel del mar a cualquer punto.</p> </a> </li>
+            <li><a href="#altura"><img src="images/altura.png" id="semilla">Altura</a></li>
+            <li><a href="#cono" ><img src="images/cono.png" id="semilla">Cono</a></li>
+            <li><a href="#corteza" ><img src="images/corteza.png" id="semilla">Corteza</a></li>
+            <li><a href="#cúspide"><img src="images/cúspide.png" id="semilla">Cúspide</a></li>
+            <li><a href="#fascículo"><img src="images/asicula.png" id="semilla">Fascículo</a></li>
+            <li><a href="#madera" ><img src="images/madera.png" id="semilla">Madera</a></li>
+            <li><a href="#ramificaciones" ><img src="images/ramificaciones.png" id="semilla">Ramificaciones</a></li>
+            <li><a href="#semilla"><img src="images/semilla.png" id="semilla">Semilla</a></li>
+            <li><a href="#tallo" ><img src="images/tallo.png" id="semilla">Tallo</a></li>
+
+        </ul>
+    </div>  
+</div><!-- fin page -->
+<!-- *********************************************************************************** -->
+<!-- ---------------------------------------------------------------------------------------- -->
+<div data-role='page' id="formulas"  >
+    <div data-role="panel" id="panel" data-display="overlay">
+    </div>
+    <div id='header' data-role='header' data-position='fixed' >
+        <img src="images/logooficial.png" id="logo">
+        <a href="#panel" class="ui-btn ui-icon-bullets ui-btn-icon-notext ui-corner-all" id="menu"> </a> <br>
+        <div data-role="navbar" data-grid="c">
+            <ul>
+                <li> <a href="#index" class="ui-btn">Inicio</a></li>
+                <li> <a href="#formulas" class="ui-btn-active">Dentrometría</a></li>
+                <li> <a href="#busqueda" class="ui-btn">Búsqueda</a></li>
+                <li> <a href="#identificacion" class="ui-btn">Identificación</a></li>
+            </ul> 
+        </div>
+    </div><!-- fin header -->
+                <div class="ui-content" role="main">
+                <ul data-role="listview" data-inset="true">
+                <li><a href="#inventario">Formato de inventario forestal</a></li>
+                <li><a href="#f1">Área basal</a></li>
+                </ul>
+            
+                </div>          
+</div><!-- fin page -->
+<!-- --------------inventario----inventario-----inventario------------------- -->
+    <div data-role="page" id="inventario">
+            <div id='header' data-role='header' data-position='fixed' >
+                    <a href="#formulas">Atrás</a><h1>Inventario</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+
+    <!-- *******************************************************************************-->
+    <div data-role="collapsible" data-mini="true" id="collapsible"> <h4>
+            Información de control, ecológica y silvicola del sitio</h4>
+            <form id="form">
+            <h6 class="f">Unidad de manejo</h6><h6 class="f">Núm. de sitio</h6><h6 class="f">Tamaño (m<sup>2</sup>)</h6><h6 class="f">Fecha</h6>
+            <input type="number" data-role="none" class="f" placeholder="- - - - - - -">
+            <input type="number" data-role="none" class="f" placeholder="- - - - - ">
+            <input type="number" data-role="none" class="f" placeholder="">
+            <input type="date" data-role="none" class="f" id="fecha">
+            <h6 class="f">UTM X</h6> <h6 class="f">UTM Y</h6> <h6 class="f">ASNM (m)</h6> <h6 class="f"> Tratamientos complementarios</h6>
+            <input type="number" data-role="none" class="f" placeholder="- - - - - -">
+            <input type="number" data-role="none" class="f" placeholder="- - - - - - -">
+            <input type="number" data-role="none" class="f" placeholder="">
+            <fieldset data-role="controlgroup" class="f" data-type="horizontal" data-mini="true">
+            <select name="select-native-11" id="select-native-11" data-mini="true">
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                </select>
+            </fieldset> 
+            <h6>Observaciones:</h6>
+            <textarea id="observacion"></textarea>
+            <button>Crear</button>
+
+            </form>
+    </div><!--fin de collapsible inventario-->
+    <!-- *******************************************************************************-->
+    <div data-role="collapsible" data-mini="true"> <h4>
+            Información dasométrica del arbolado comercial del sitio</h4>
+            <h6 class="k2">Especie</h6> <h6 class="k2">Do</h6>
+             <!-- ****Especies*************************-->
+            <fieldset data-role="controlgroup" class="k2" data-type="horizontal" data-mini="true">
+            <select name="select-native-11" id="select-native-11" data-mini="true">
+                <option value="1"><span>1 Pinus oaxacana</span></option>
+                <option value="2"><span>2 Pinus douglasiana</span></option>
+                <option value="3"><span>3 Pinus patula</span></option>
+                <option value="4"><span>4 Pinus pseudostrobus</span></option>
+                <option value="5"><span>5 Pinus maximinoi</span></option>
+                <option value="6"><span>6 Pinus montezumae</span></option>
+                <option value="7"><span>7 Pinus ayacahuite</span></option>
+                <option value="8"><span>8 Pinus oocarpa</span></option>
+                <option value="9"><span>9 Pinus rudis</span></option>
+                <option value="10"><span>10 Pinus michoacana</span></option>
+                <option value="11"><span>11 Pinus leiophylla</span></option>
+                <option value="12"><span>12 Pinus lawsonii</span></option>
+                <option value="13"><span>13 Pinus pringlei</span></option>
+                <option value="14"><span>14 Pinus hartwegii</span></option>
+                <option value="15"><span>15 Pinus herrerae</span></option>
+                <option value="16"><span>16 Pinus teocote</span></option>
+                <option value="17"><span>17 Pinus chiapensis</span></option>
+                <option value="18"><span>18 Pinus reflexa</span></option>
+                <option value="19"><span>19 Pinus spp</span></option>
+                </select>
+            </fieldset>
+
+
+            <fieldset data-role="controlgroup" class="k2" data-type="horizontal" data-mini="true">
+            <select name="select-native-11" id="select-native-11" data-mini="true">
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                </select>
+            </fieldset> 
+
+             <h6 class="g">Dn (cm)</h6> <h6 class="g">At (m)</h6> <h6 class="g">Ac (m)</h6><br>
+            <input type="number" data-role="none" class="g" placeholder="cm" >  
+            <input type="number" data-role="none" class="g" placeholder="m">
+            <input type="number" data-role="none" class="g" placeholder="m">
+            <br><br><br>
+            <button >Agregar</button>
+    </div>
+    <!-- *******************************************************************************-->
+    <div data-role="collapsible" data-mini="true"> <h4>
+    Información de incremento del sitio de muestro </h4>
+    <!-- ****Especies*************************-->
+    <h6 class="k2">Especie</h6> <h6 class="k2">Do</h6>
+             <!-- ****Especies*************************-->
+            <fieldset data-role="controlgroup" class="k2" data-type="horizontal" data-mini="true">
+            <select name="select-native-11" id="select-native-11" data-mini="true">
+                <option value="1"><span>1 Pinus oaxacana</span></option>
+                <option value="2"><span>2 Pinus douglasiana</span></option>
+                <option value="3"><span>3 Pinus patula</span></option>
+                <option value="4"><span>4 Pinus pseudostrobus</span></option>
+                <option value="5"><span>5 Pinus maximinoi</span></option>
+                <option value="6"><span>6 Pinus montezumae</span></option>
+                <option value="7"><span>7 Pinus ayacahuite</span></option>
+                <option value="8"><span>8 Pinus oocarpa</span></option>
+                <option value="9"><span>9 Pinus rudis</span></option>
+                <option value="10"><span>10 Pinus michoacana</span></option>
+                <option value="11"><span>11 Pinus leiophylla</span></option>
+                <option value="12"><span>12 Pinus lawsonii</span></option>
+                <option value="13"><span>13 Pinus pringlei</span></option>
+                <option value="14"><span>14 Pinus hartwegii</span></option>
+                <option value="15"><span>15 Pinus herrerae</span></option>
+                <option value="16"><span>16 Pinus teocote</span></option>
+                <option value="17"><span>17 Pinus chiapensis</span></option>
+                <option value="18"><span>18 Pinus reflexa</span></option>
+                <option value="19"><span>19 Pinus spp</span></option>
+                </select>
+            </fieldset>
+
+            <fieldset data-role="controlgroup" class="k2" data-type="horizontal" data-mini="true">
+            <select name="select-native-11" id="select-native-11" data-mini="true">
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                </select>
+            </fieldset> 
+            <h6 class="g">Dn(cm)</h6> <h6 class="g">At(m)</h6> <h6 class="g">NA</h6>
+            <input type="number" name="" class="g" data-role="none" placeholder="Diámetro normal">
+            <input type="number" name="" class="g" data-role="none" placeholder="Altura total">
+            <input type="number" name="" class="g" data-role="none" placeholder="# de anillos">
+
+            <h6 class="g">Edad</h6> <h6 class="g">Tp</h6> <h6 class="g">CE</h6>
+            <input type="number" name="" class="g" data-role="none" placeholder="Edad">
+            <input type="number" name="" class="g" data-role="none" placeholder="Tiempo de paso">
+            <input type="number" name="" class="g" data-role="none" placeholder="Categoria de edad">
+
+            <h6 class="g">R</h6> <h6 class="g">Rcc(mm)</h6> <h6 class="g">R1(Rsc)</h6>
+            <input type="number" name="" class="g" data-role="none" placeholder="Residual de la categoria de edad">
+            <input type="number" name="" class="g" data-role="none" placeholder="Radio con corteza">
+            <form class="g" >
+            <input type="number" class="g" name="" data-role="none" placeholder="radio sin corteza">
+            <input type="button" data-role="none" name="" value="Sig.">
+            </form>
+            
+
+
+    </div>
+                
+
+
+        </div><!--fin de ui-content inventario-->
+    </div> <!--fin de page inventario-->
+
+<!-- ---------------------------------Area basal --------Area basal--------------------- -->
+    <div data-role="page" id="f1" >
+            <div id='header' data-role='header' data-position='fixed' >
+                <a href="#formulas">Atrás</a><h1>Área basal</h1>
+            </div>
+            <div class="ui-content" role="main">
+            <p><strong>Área Basal</strong><br> Se entiende en Dasometría como el área de cualquier sección transversal del fuste de un árbol, el área basal, conocida como A.B. es el área de la sección horizontal de un árbol que se encuentra a 1,3 m del suelo, es decir con un D. A. P.
+            La formula es la la siguiente:<br>
+            <h2>AB = π/4 *D<sup>2</sup></h2>
+            
+            </p>
+
+                <div data-role="collapsible" data-mini="false"> <h4>Calcular Fuste Circular </h4>
+                <input type="number" id="diametro1"  placeholder="Ingrese el diámetro en cm">
+                <button id="calcularFusteC">Calcular</button>
+                <h4 id="res">Resultado:</h4>
+                </div>
+                <div>
+                    <table id="tabla1">
+                    <thead><tr><th>Pinus</th><th>Diametro cm</th> <th>Área basal en cm<sup>2</sup></th></tr></thead>
+                    <tbody id="tb1">    </tbody>
+                </table>
+                </div>
+                
+                <button id="exportar">Exportar a Excel</button>
+
+                </div>
+    </div>
+                        
+<!-- ------------------------------------------------------------------------------------------------- -->
+<div data-role='page' id="busqueda" >
+    <div data-role="panel" id="panel" data-display="overlay">
+    </div>
+
+    <div id='header' data-role='header' data-position='fixed' >
+        <img src="images/logooficial.png" id="logo">
+        <a href="#panel" class="ui-btn ui-icon-bullets ui-btn-icon-notext ui-corner-all" id="menu"> </a> <br>
+        <div data-role="navbar" data-grid="c">
+            <ul>
+                <li> <a href="#index" class="ui-btn">Inicio</a></li>
+                <li> <a href="#formulas" class="ui-btn">Dentrometría</a></li>
+                <li> <a href="#busqueda" class="ui-btn-active">Búsqueda</a></li>
+                <li> <a href="#identificacion" class="ui-btn">Identificación</a></li>
+            </ul> 
+        </div>
+    </div><!-- fin header -->
+    <div class="ui-content">
+        <ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar" data-mini="true" data-insert="true">
+            <li><a href="pinus/Ayacahuite.html">Pinus Ayacahuite</a></li>
+            <li><a href="pinus/Chiapensis.html">Pinus Chiapensis</a></li>
+            <li><a href="pinus/Devoniana.html">Pinus Devoniana</a></li>
+            <li><a href="pinus/Greengii.html">Pinus Greengii</a></li>
+            <li><a href="pinus/Herrerai.html">Pinus Herrerai</a></li>
+            <li><a href="pinus/leiophylla.html">Pinus Leiophylla</a></li>
+            <li><a href="pinus/Maximartinezii.html">Pinus Maximartinezii</a></li>
+            <li><a href="pinus/Montezumae.html">Pinus Montezumae</a></li>
+            <li><a href="pinus/Oaxacana.html">Pinus Oaxacana</a></li>
+            <li><a href="pinus/Ocarpa.html">Pinus Ocarpa</a></li>
+            <li><a href="pinus/Patula.html">Pinus Patula</a></li>
+            <li><a href="pinus/Pseudostrobus.html">Pinus Pseudostrobus</a></li>
+            <li><a href="pinus/Rudis.html">Pinus Rudis</a></li>
+            <li><a href="pinus/Teocote.html">Pinus Teocote</a></li>
+        </ul>
+    </div>
+</div><!-- fin page -->
+<!-- ------------------------------------------------------------------------------------------------- -->
+<div data-role="page" id ="identificacion">
+    <div data-role="panel" id="panel" data-display="overlay">   
+    </div>
+    <div id='header' data-role='header' data-position='fixed' >
+        <img src="images/logooficial.png" id="logo">
+        <a href="#panel" class="ui-btn ui-icon-bullets ui-btn-icon-notext ui-corner-all" id="menu"> </a> <br>
+        <div data-role="navbar" data-grid="c">
+            <ul>
+                <li> <a href="#index" class="ui-btn">Inicio</a></li>
+                <li> <a href="#formulas" class="ui-btn">Dentrometría</a></li>
+                <li> <a href="#busqueda" class="ui-btn">Búsqueda</a></li>
+                <li> <a href="#identificacion" class="ui-btn-active">Identificación</a></li>
+            </ul> 
+        </div>
+    </div><!-- fin header -->
+
+    <div class="ui-content">
+            
+            
+    </div>
+</div><!-- fin page -->
+<!-- ------------------------------------------------------------------------------------------------- -->
+
+
+       
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+                <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile.custom.js"></script>
+
+    </body>
+</html>
